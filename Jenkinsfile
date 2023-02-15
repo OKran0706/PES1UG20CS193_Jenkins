@@ -16,7 +16,8 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'cat hi.txt'
+                echo 'Deploying'
+//                 sh 'cat hi.txt'
                 
             }
         }
