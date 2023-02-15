@@ -5,6 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'g++ -o CS193_Karan CS193_Karan.cpp'
+                sh 'chmod +x CS193_Karan'
             }
         }
         stage('Test') {
