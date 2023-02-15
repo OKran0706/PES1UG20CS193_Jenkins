@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                ec 'ERR'
+                echo 'ERR'
                 
             }
         }
