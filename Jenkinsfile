@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'g++ -o CS193_Karan CS193_Karan.cpp'
-                sh 'chmod +x CS193_Karan'
+                sh script: 'g++ -o CS193_Karan CS193_Karan.cpp', shell: '/bin/bash'
+                sh script: 'chmod +x CS193_Karan', shell: '/bin/bash'
             }
         }
         stage('Test') {
@@ -17,7 +17,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying'
-                sh 'cat hi.txt'
+                sh script: 'cat hi.txt', shell: shell: '/bin/dash'
                 
             }
         }
