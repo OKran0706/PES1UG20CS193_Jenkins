@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'g++ -o CS193_Karan.cpp'
+                sh 'g++ -o CS193_Karan CS193_Karan.cpp'
             }
         }
         stage('Test') {
