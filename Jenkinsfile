@@ -15,8 +15,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh '.ShouldCauseError'
-                echo 'Deployment Done'
+                ec 'ERR'
                 
             }
         }
