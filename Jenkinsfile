@@ -10,7 +10,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh './CS193_Karan'
-                build job: 'PES1UG20CS193-1'
+                build job: 'PES1UG20CS193-3'
             }
         }
         stage('Deploy') {
