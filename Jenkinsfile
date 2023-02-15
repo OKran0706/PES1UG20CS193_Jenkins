@@ -23,11 +23,7 @@ pipeline {
         }
     }
     
-    post {
-        always {
-            echo 'Pipeline completed.'
-        }
-            
+    post {    
         failure {
             echo 'Pipeline failed.'
         }
