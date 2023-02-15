@@ -10,14 +10,14 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh './CS193_Karan'
+                sh script: './CS193_Karan',  shell: '/bin/bash'
                 build job: 'PES1UG20CS193-1'
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying'
-                sh script: 'cat hi.txt', shell: shell: '/bin/dash'
+                sh script: 'cat hi.txt', shell: '/bin/dash'
                 
             }
         }
