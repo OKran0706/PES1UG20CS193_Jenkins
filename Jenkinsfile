@@ -17,7 +17,6 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'echo Karan_LAB'
-                error 'Deployment failed'
                 
             }
         }
