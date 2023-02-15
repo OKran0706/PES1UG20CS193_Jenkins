@@ -15,7 +15,8 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'ERR'
+                sh 'echo "Deployment stage"'
+                sh 'exit 1'
                 
             }
         }
