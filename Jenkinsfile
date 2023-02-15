@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'echo Karan_LAB'
+                sh 'exit 1'
                 
             }
         }
